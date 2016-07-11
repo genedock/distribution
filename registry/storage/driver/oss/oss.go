@@ -446,7 +446,7 @@ func (d *driver) URLFor(ctx context.Context, path string, options map[string]int
 		}
 	}
 
-	expiresTime := time.Now().Add(20 * time.Minute)
+	expiresTime := time.Now().Add(2000 * time.Minute)
 
 	expires, ok := options["expiry"]
 	if ok {
